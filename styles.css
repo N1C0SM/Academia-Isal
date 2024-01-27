@@ -92,20 +92,15 @@ main {
     background-image: url("./IMG/hero.jpg");
 }
 
-#hero-sobre nosotros {
+#hero-sobre-nosotros {
     background-image: url(./IMG/hero.jpg)
 }
 
-#hero-alumnos
- {
+#hero-alumnos  {
     background-image: url(./IMG/hero.jpg);
 }
 
-#hero-stone-island {
-    background-image: url(./IMG/hero.jpg);
-}
-
-#hero-nude-project {
+#hero-servicios {
     background-image: url(./IMG/hero.jpg);
 }
 
@@ -143,9 +138,6 @@ main {
     color: orange;
 }
 
-#novedades {
-    padding: 24px;
-}
 
 .alumnos {
     display: flex;
@@ -172,6 +164,44 @@ main {
     width: 252px;
     height: 320.26px;
     object-fit: cover;
+}
+.hola{
+    margin: 6em;
+}
+main{
+    margin-top: 8em;
+}
+.hola h1{
+    margin-top: 3em;
+    font-size: 2em;
+    text-align: center;
+}
+.hola span{
+    font-size: 3em;
+    color: orange;
+}
+.hola h2{
+    color: darkblue;
+}
+.hola img{
+    width: 100%;
+    margin-top: 3em;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main h1 , .icon{
+    text-align: center;
+}
+main h1,h3{
+    width: 200px;
+    text-align: center;
+}
+main .fa-solid, .ph-bold{
+    font-size: 50px;
 }
 
 form {
