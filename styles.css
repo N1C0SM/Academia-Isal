@@ -350,47 +350,42 @@ footer h3 {
     color: white;
 }
 
-/********************************************filtros***************************************/
-
-#sudaderas-sin-capucha:checked ~.articles .sudaderas-con-capucha,#sudaderas-sin-capucha:checked~.articles .chaquetas, #sudaderas-sin-capucha:checked~.articles .camisetas, #sudaderas-sin-capucha:checked~.articles .jerseys, #sudaderas-sin-capucha:checked~.articles .pantalones {
-    display: none;
-}
-
-#sudaderas-con-capucha:checked~.articles .sudaderas-sin-capucha, #sudaderas-con-capucha:checked~.articles .chaquetas, #sudaderas-con-capucha:checked~.articles .jerseys, #sudaderas-con-capucha:checked~.articles .camisetas, #sudaderas-con-capucha:checked~.articles .pantalones {
-    display: none;
-}
-#pantalones:checked~.articles .sudaderas-sin-capucha, #pantalones:checked~.articles .chaquetas, #pantalones:checked~.articles .jerseys, #pantalones:checked~.articles .camisetas, #pantalones:checked~.articles .sudaderas-con-capucha {
-    display: none;
-}
-
-#chaquetas:checked~.articles .sudaderas-con-capucha, #chaquetas:checked~.articles .sudaderas-sin-capucha, #chaquetas:checked~.articles .jerseys, #chaquetas:checked~.articles .camisetas, #chaquetas:checked~.articles .pantalones {
-    display: none;
-}
-
-#jerseys:checked~.articles .sudaderas-con-capucha, #jerseys:checked~.articles .sudaderas-sin-capucha, #jerseys:checked~.articles .camisetas,
-#jerseys:checked~.articles .chaquetas, #jerseys:checked~.articles .pantalones{
-    display: none;
-}
-
-#camisetas:checked~.articles .sudaderas-con-capucha, #camisetas:checked~.articles .sudaderas-sin-capucha, #camisetas:checked~.articles .chaquetas,
-#camisetas:checked~.articles .jerseys, #camisetas:checked~.articles .pantalones {
-    display: none;
-}
-
-
-/********************************************filtros***************************************/
-
 /********************************************media*****************************************/
 
 @media screen and (max-width:914px) {
-
+    main{
+        display: block;
+        margin-left: 10em;
+        align-items: center;
+    }
+    main .icon{
+        margin-right: 10em;
+    }
     #hero {
         height: 80vh;
     }
+    main  #horarios{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10em;
+        gap: 100px;
+    }
+    main  #horarios article{
+        height: fit-content;
+        width: fit-content;
+    }
+    .main img{
+        height: 80vh;
 
-    .logo {
-    max-width: 48px;
-    max-height: 48px;
+    }
+    .main .content{
+        padding: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+    footer .logo {
+    display: none;
     }
 
     .responsive-hidden {
@@ -426,21 +421,4 @@ footer h3 {
         width: 100%;
     }
 
-    .rows {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tienda {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .social {
-        display: flex;
-        flex-direction: column;
-    }
 }
