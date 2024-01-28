@@ -187,7 +187,6 @@ main{
     width: 100%;
     margin-top: 3em;
 }
-
 main{
     display: flex;
     flex-wrap: wrap;
@@ -196,12 +195,69 @@ main{
 main h1 , .icon{
     text-align: center;
 }
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+.hero h1{
+    color: whitesmoke;
+}
+#hero-alumnos{
+    background-image: url(./IMG/img-alumnos.jpg);
+}
+#hero-horarios{
+    background-image: url(./IMG/cover_horarios.jpg);
+}
+#hero-contact{
+    background-image:url(./IMG/cover_contact.jpg);
+}
+#hero-services{
+    background-image: url(./IMG/img_services.jpg);
+}
+
 main h1,h3{
     width: 200px;
     text-align: center;
 }
 main .fa-solid, .ph-bold{
     font-size: 50px;
+}
+#horarios{
+    display: flex;
+    gap: 3em;
+}
+main img{
+    width: 40em;
+    height: 40em;
+}
+main article{
+    text-align: center;
+    border: solid 5px whitesmoke;
+    height: 15em;
+}
+.main .content{
+    padding: 0px 0px 27px;
+    width: 600px;
+    height: 120px;
+}
+.main .content h1{
+    margin: 0px 0px 27px;
+    font-size: 40px;
+}
+.main{
+
+    display: flex;
+}
+.main img{
+    height: 1300px;
+    margin-right: 10em;
+}
+.main p{
+    font-size: 32px;
+}
+main article h2{
+    font-size: 27px;
 }
 
 form {
@@ -212,6 +268,12 @@ form {
     padding: 50px;
     border-radius: 25px;
     margin: auto;
+}
+iframe{
+    width: 900px;
+    height:400px;
+    justify-content: center;
+    align-items:center;
 }
 
 h2 {
