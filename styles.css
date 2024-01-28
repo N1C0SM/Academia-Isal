@@ -150,6 +150,11 @@ main {
     max-width: 300px;
     padding: 24px;
 }
+.asignaturas,.teachers,.metodologia,.groups,.clases{
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 24px;
+}
 
 .alumnos article img {
     width: 252px;
@@ -160,7 +165,13 @@ main {
     margin: 6em;
 }
 main{
+    width: fit-content;
     margin-top: 8em;
+    padding: 0px 24px;
+}
+main .icon{
+    margin-bottom: 10px;
+    text-align: center;
 }
 .hola h1{
     margin-top: 3em;
@@ -182,6 +193,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap:139px
 }
 main h1 , .icon{
     text-align: center;
@@ -237,7 +249,6 @@ main article{
     font-size: 40px;
 }
 .main{
-
     display: flex;
 }
 .main img{
@@ -339,7 +350,7 @@ footer h3 {
 
 /********************************************media*****************************************/
 
-@media screen and (max-width:914px) {
+@media screen and (max-width:1208PX) {
     main{
         display: block;
         margin-left: 10em;
