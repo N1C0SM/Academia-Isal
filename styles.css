@@ -5,20 +5,24 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
 }
+header{
+    width: 100%;
+}
 nav .logo {
     width: 25%;
     max-width: 100%;
 }
 
 nav {
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
+    background-color: #00007e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 12px;
     position: sticky;
@@ -33,7 +37,7 @@ nav ul {
 }
 
 nav li:hover {
-    border-bottom: orange 5px solid;
+    background-color: #00007e;
 }
 #burger , .burger{
     display: none;
@@ -41,7 +45,7 @@ nav li:hover {
     transition: cubic-bezier(0.86, 0, 0.07, 1);
 }
 .burger:hover{
-    background-color: orange;
+    background-color: #c88302;
     border-radius: 10px;
 }
 
@@ -56,7 +60,7 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color: #c88302;
 }
 
 .menu a,footer a {
@@ -66,6 +70,11 @@ a:hover {
 
 main {
     min-height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero {
@@ -111,11 +120,11 @@ main {
 
 .btn,.btn {
     display: inline-block;
-    border: 2px solid orange;
+    border: 2px solid #c88302;
     border-radius: 10px;
     padding: 15px 30px;
     background-color: transparent;
-    color: orange;
+    color: #c88302;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -126,7 +135,7 @@ main {
 .btn:hover {
     background-color: transparent;
     cursor: pointer;
-    color: orange;
+    color: #c88302;
 }
 
 
@@ -157,15 +166,17 @@ main {
 }
 
 .alumnos article img {
-    width: 252px;
-    height: 320.26px;
     object-fit: cover;
 }
 .hola{
     margin: 6em;
 }
-main{
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: fit-content;
+    gap:139px;
     margin-top: 8em;
     padding: 0px 24px;
 }
@@ -180,20 +191,17 @@ main .icon{
 }
 .hola span{
     font-size: 3em;
-    color: orange;
+    color: #c88302;
 }
 .hola h2{
-    color: darkblue;
+    background-color: #00007e;
+    color: whitesmoke;
+    margin: 5px;
 }
 .hola img{
-    width: 100%;
     margin-top: 3em;
-}
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap:139px
+    height: auto;
+    width: auto;
 }
 main h1 , .icon{
     text-align: center;
@@ -297,9 +305,9 @@ input, textarea {
 
 footer {
     background-color: orange;
-    min-height: 200px;
     bottom: 0;
-
+    width: 100%;
+    height: 100%;
 }
 
 footer .rows .logo img {
@@ -308,7 +316,6 @@ footer .rows .logo img {
 
 footer ul {
     list-style: none;
-
 }
 
 footer h3 {
@@ -353,11 +360,11 @@ footer h3 {
 @media screen and (max-width:1208PX) {
     main{
         display: block;
-        margin-left: 10em;
-        align-items: center;
+        justify-content: center;
     }
     main .icon{
-        margin-right: 10em;
+        margin-right: auto;
+        margin-left: auto;
     }
     #hero {
         height: 80vh;
@@ -368,9 +375,16 @@ footer h3 {
         margin-right: 10em;
         gap: 100px;
     }
+    .asignaturas{
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
     main  #horarios article{
         height: fit-content;
         width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
     .main img{
         height: 80vh;
@@ -399,7 +413,7 @@ footer h3 {
         position: absolute;
         top: 106px;
         right: 0;
-        background-color: blue;
+        background-color: #00007e;
         padding: 12px 32px;
         padding-right: 12px;
         width: auto;
