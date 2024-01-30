@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    list-style: none;
 }
 header{
     width: 100%;
@@ -12,12 +11,10 @@ nav .logo {
     width: 25%;
     max-width: 100%;
 }
-
 nav {
     height: 100%;
     width: 100%;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -29,13 +26,14 @@ nav {
     z-index: 2;
     top: 0;
 }
-
 nav ul {
     display: flex;
     gap: 12px;
     max-width: 100%;
 }
-
+nav ul li{
+    list-style: none;
+}
 nav li:hover {
     background-color: #00007e;
 }
@@ -48,8 +46,6 @@ nav li:hover {
     background-color: #c88302;
     border-radius: 10px;
 }
-
-
 a {
     font-size: 20px;
     font-weight: 600;
@@ -58,25 +54,10 @@ a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-
 a:hover {
     color: #c88302;
-}
 
-.menu a,footer a {
-    text-decoration: none;
-    color: #e8e9e9;
 }
-
-main {
-    min-height: 85vh;
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .hero {
     background-size: cover;
     background-position: 50%;
@@ -87,23 +68,14 @@ main {
     align-items: center;
     padding: 24px;
 }
-
 #hero {
     background-image: url("./IMG/hero.jpg");
 }
-
-#hero-sobre-nosotros {
-    background-image: url(./IMG/hero.jpg)
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
 }
-
-#hero-alumnos  {
-    background-image: url(./IMG/hero.jpg);
-}
-
-#hero-servicios {
-    background-image: url(./IMG/hero.jpg);
-}
-
 .hero .contenido {
     border-radius: 8px;
     padding: 25px;
@@ -112,77 +84,16 @@ main {
     width: 100%;
     margin: 24px;
 }
-
-.hero .contenido h1 {
+.hero h1{
+    color: whitesmoke;
     font-size: 48px;
     margin-bottom: 32px;
-}
-
-.btn,.btn {
-    display: inline-block;
-    border: 2px solid #c88302;
-    border-radius: 10px;
-    padding: 15px 30px;
-    background-color: transparent;
-    color: #c88302;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    width: fit-content;
-}
-
-.btn:hover {
-    background-color: transparent;
-    cursor: pointer;
-    color: #c88302;
-}
-
-
-.alumnos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 48px;
-    margin-top: 24px;
-    object-fit: cover;
-}
-
-.alumnos article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #efefef;
-    width: 100%;
-    max-width: 300px;
-    padding: 24px;
-}
-.asignaturas,.teachers,.metodologia,.groups,.clases{
-    align-items: center;
-    width: fit-content;
-    margin-bottom: 24px;
-}
-
-.alumnos article img {
-    object-fit: cover;
 }
 .hola{
     margin: 6em;
 }
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: fit-content;
-    gap:139px;
-    margin-top: 8em;
-    padding: 0px 24px;
-}
-main .icon{
-    margin-bottom: 10px;
-    text-align: center;
+.hola #why{
+    margin-bottom: 2em;
 }
 .hola h1{
     margin-top: 3em;
@@ -199,20 +110,106 @@ main .icon{
     margin: 5px;
 }
 .hola img{
-    margin-top: 3em;
-    height: auto;
-    width: auto;
+    margin: 3em auto 0 auto;
+    height: 100%;
+    width: 100%;
+}
+#hero-sobre-nosotros {
+    background-image: url(./IMG/hero.jpg)
+}
+main {
+    min-height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: fit-content;
+    gap:139px;
+    margin-top: 8em;
+    padding: 0px 24px;
+}
+main .icon{
+    margin-bottom: 10px;
+    text-align: center;
 }
 main h1 , .icon{
     text-align: center;
 }
-.hero{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
+main h1,h3{
+    width: 200px;
+    text-align: center;
 }
-.hero h1{
-    color: whitesmoke;
+main .fa-solid, .ph-bold{
+    font-size: 50px;
+}
+main img{
+    width: 40em;
+    height: 40em;
+}
+main article{
+    text-align: center;
+    border: solid 5px whitesmoke;
+    height: 15em;
+}
+main article h2{
+    font-size: 27px;
+}
+#hero-alumnos  {
+    background-image: url(./IMG/hero.jpg);
+}
+
+#hero-servicios {
+    background-image: url(./IMG/hero.jpg);
+}
+.btn,.btn {
+    display: inline-block;
+    border: 2px solid #c88302;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #c88302;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: fit-content;
+}
+.btn:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #c88302;
+}
+.alumnos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-top: 24px;
+    object-fit: cover;
+}
+.alumnos article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efefef;
+    width: 100%;
+    max-width: 300px;
+    padding: 24px;
+}
+.alumnos article img {
+    object-fit: cover;
+}
+.asignaturas,.teachers,.metodologia,.groups,.clases{
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 24px;
 }
 #hero-alumnos{
     background-image: url(./IMG/img-alumnos.jpg);
@@ -226,26 +223,9 @@ main h1 , .icon{
 #hero-services{
     background-image: url(./IMG/img_services.jpg);
 }
-
-main h1,h3{
-    width: 200px;
-    text-align: center;
-}
-main .fa-solid, .ph-bold{
-    font-size: 50px;
-}
 #horarios{
     display: flex;
     gap: 3em;
-}
-main img{
-    width: 40em;
-    height: 40em;
-}
-main article{
-    text-align: center;
-    border: solid 5px whitesmoke;
-    height: 15em;
 }
 .main .content{
     padding: 0px 0px 27px;
@@ -266,10 +246,6 @@ main article{
 .main p{
     font-size: 32px;
 }
-main article h2{
-    font-size: 27px;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -285,16 +261,13 @@ iframe{
     justify-content: center;
     align-items:center;
 }
-
 h2 {
     color: black;
 }
-
 label {
     font-size: 17px;
     margin-bottom: 10px;
 }
-
 input, textarea {
     padding: 12px 14px;
     border: 1px solid black;
@@ -302,78 +275,90 @@ input, textarea {
     border-radius: 10px;
     color: #000000;
 }
-
 footer {
     background-color: orange;
     bottom: 0;
     width: 100%;
     height: 100%;
 }
-
 footer .rows .logo img {
     max-width: 150px;
 }
-
 footer ul {
     list-style: none;
 }
-
 footer h3 {
     font-size: 24px;
 }
-
 .rows {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     padding: 20px;
 }
-
 .rows div {
     width: 33%;
 }
-
 .tienda, .social {
     display: flex;
     place-items: center;
     flex-direction: column;
     gap: 20px;
 }
-
 .logo {
     display: flex;
     place-content: center;
 }
-
 .social ul {
     display: flex;
     gap: 10px;
 }
-
 .ph {
     font-size: 32px;
     color: white;
 }
-
 /********************************************media*****************************************/
-
 @media screen and (max-width:1208PX) {
-    main{
-        display: block;
-        justify-content: center;
+    .responsive-hidden:hover {
+    border-bottom: none;
     }
-    main .icon{
-        margin-right: auto;
-        margin-left: auto;
+    .burger{
+        display: block;
+    }
+    .responsive-hidden {
+        display: none;
+    }
+    #burger:checked ~ .responsive-hidden {
+        display: block;
+        position: absolute;
+        top: 106px;
+        right: 0;
+        background-color: #00007e;
+        padding: 12px 32px;
+        padding-right: 12px;
+        width: auto;
+    }
+    nav .responsive-hidden  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
     }
     #hero {
         height: 80vh;
+    }
+    main{
+        display: block;
+        justify-content: center;
     }
     main  #horarios{
         display: flex;
         flex-direction: column;
         margin-right: 10em;
         gap: 100px;
+    }
+    main .icon{
+        margin-right: auto;
+        margin-left: auto;
     }
     .asignaturas{
         align-items: center;
@@ -394,37 +379,9 @@ footer h3 {
     width: fit-content;
     height: fit-content;
     }
-
     footer .logo {
     display: none;
     }
-    .responsive-hidden:hover {
-    border-bottom: none;
-    }
-    .burger{
-        display: block;
-    }
-    .responsive-hidden {
-        display: none;
-    }
-
-    #burger:checked ~ .responsive-hidden {
-        display: block;
-        position: absolute;
-        top: 106px;
-        right: 0;
-        background-color: #00007e;
-        padding: 12px 32px;
-        padding-right: 12px;
-        width: auto;
-    }
-
-    nav .responsive-hidden  {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
     form {
         width: 100%;
     }
