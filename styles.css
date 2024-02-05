@@ -33,6 +33,18 @@ nav ul {
 }
 nav ul li{
     list-style: none;
+    color: white;
+}
+#cursos , .cursos{
+    display: none;
+    user-select: none;
+}
+.drop-down{
+    display: block;
+    display: none;
+}
+#cursos:checked ~ .drop-down{
+    display: block;
 }
 nav li:hover {
     background-color: #00007e;
@@ -40,7 +52,6 @@ nav li:hover {
 #burger , .burger{
     display: none;
     user-select: none;
-    transition: cubic-bezier(0.86, 0, 0.07, 1);
 }
 .burger:hover{
     background-color: #c88302;
@@ -104,6 +115,11 @@ a:hover {
     font-size: 3em;
     color: #c88302;
 }
+.asignaturas,.teachers,.metodologia,.groups,.clases{
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 24px;
+}
 .hola h2{
     background-color: #00007e;
     color: whitesmoke;
@@ -114,8 +130,8 @@ a:hover {
     height: 100%;
     width: 100%;
 }
-#hero-sobre-nosotros {
-    background-image: url(./IMG/hero.jpg)
+#hero-horarios{
+    background-image: url(./IMG/cover_horarios.jpg);
 }
 main {
     min-height: 85vh;
@@ -123,15 +139,20 @@ main {
     flex-wrap: wrap;
     width: fit-content;
     margin: 0 auto 0 auto;
-}
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: fit-content;
     gap:139px;
     margin-top: 8em;
     padding: 0px 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#horarios{
+    display: flex;
+    gap: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
 }
 main .icon{
     margin-bottom: 10px;
@@ -155,6 +176,9 @@ main article{
     text-align: center;
     border: solid 5px whitesmoke;
     height: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
 }
 main article h2{
     font-size: 27px;
@@ -162,7 +186,6 @@ main article h2{
 #hero-alumnos  {
     background-image: url(./IMG/hero.jpg);
 }
-
 #hero-servicios {
     background-image: url(./IMG/hero.jpg);
 }
@@ -184,11 +207,14 @@ main article h2{
     cursor: pointer;
     color: #c88302;
 }
-.alumnos {
+#hero-alumnos{
+    background-image: url(./IMG/img-alumnos.jpg);
+}
+.alumnos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 48px;
+    gap: 50px;
     margin-top: 24px;
     object-fit: cover;
 }
@@ -204,28 +230,19 @@ main article h2{
     padding: 24px;
 }
 .alumnos article img {
+    width: 300px;
     object-fit: cover;
-}
-.asignaturas,.teachers,.metodologia,.groups,.clases{
-    align-items: center;
-    width: fit-content;
-    margin-bottom: 24px;
-}
-#hero-alumnos{
-    background-image: url(./IMG/img-alumnos.jpg);
-}
-#hero-horarios{
-    background-image: url(./IMG/cover_horarios.jpg);
+    max-width: 300px;
+    width: 100%;
+    height: 182.4px;
+    min-width: 200px;
+    object-fit: cover;
 }
 #hero-contact{
     background-image:url(./IMG/cover_contact.jpg);
 }
 #hero-services{
     background-image: url(./IMG/img_services.jpg);
-}
-#horarios{
-    display: flex;
-    gap: 3em;
 }
 .main .content{
     padding: 0px 0px 27px;
@@ -237,6 +254,7 @@ main article h2{
     font-size: 40px;
 }
 .main{
+    border-top: 5em;
     display: flex;
 }
 .main img{
@@ -318,15 +336,15 @@ footer h3 {
     color: white;
 }
 /********************************************media*****************************************/
-@media screen and (max-width:1208PX) {
+@media (max-width:1208PX) {
+    nav .responsive-hidden  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        display: none;
+    }
     .responsive-hidden:hover {
     border-bottom: none;
-    }
-    .burger{
-        display: block;
-    }
-    .responsive-hidden {
-        display: none;
     }
     #burger:checked ~ .responsive-hidden {
         display: block;
@@ -338,10 +356,8 @@ footer h3 {
         padding-right: 12px;
         width: auto;
     }
-    nav .responsive-hidden  {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+    .burger{
+        display: block;
     }
     #hero {
         height: 80vh;
@@ -365,19 +381,13 @@ footer h3 {
         margin-left: auto;
         margin-right: auto;
     }
-    main  #horarios article{
-        height: fit-content;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .main img{
-        height: 80vh;
-    }
     .main .content{
     padding: 0;
     width: fit-content;
     height: fit-content;
+    }
+    .main img{
+        height: 80vh;
     }
     footer .logo {
     display: none;
@@ -385,5 +395,4 @@ footer h3 {
     form {
         width: 100%;
     }
-
 }
