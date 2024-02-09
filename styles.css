@@ -488,4 +488,7 @@ footer h3 {
     form {
         width: 100%;
     }
+    .maps{
+        display: none;
+    }
 }
