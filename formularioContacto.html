@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Academia Isal-Education Center in Oviedo</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="./IMG/academy-brand.png">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -29,21 +29,27 @@
       </ul>
     </nav>
   </header>
-  <main id="contact">
-    <div class="letters"><span class="contact">Contact</span>
-      <span class="information">Information</span>
+
+
+
+  <section class="hero" id="hero-contact">
+    <div class="contenido">
+      <h1>Hagamos que suceda</h1>
     </div>
-    <span class="direction">Academia Isal Calle Matemático Pedrayes, 15, 1A 33005 Oviedo </span>
-    <span class="phone">662
-      54 28 66</span>
-    <span class="e-mail">academiaissal@gmail.com</span>
-    <div class="btn2">
-      <a class="frame_btn"></a>
-      <a href="formularioContacto.html" class="letterContact">
-        <span class="contact">CONTACTANOS</span>
-      </a>
-    </div>
-    <div class="maps"></div>
+  </section>
+  <main>
+    <form action="https://formsubmit.co/academiaisal@gmail.com" method="post">
+      <h2>Enviar su formulario</h2>
+      <label for="name">Introduce su nombre completo</label>
+      <input type="text" id="name">
+      <label for="email">Introduce su correo electronico</label>
+      <input type="email" name="email" id="email">
+      <label for="Asunto">Asunto</label>
+      <input type="text" id="Asunto">
+      <label for="Comentarios">Comentarios</label>
+      <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+      <input class="btn" type="button" value="Enviar">
+    </form>
   </main>
   <footer>
     <div class="rows">
